@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtSearchHoaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/khung_edt_search_the_loai"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:drawableTint="@color/blue"
+        android:hint="Tìm kiếm hoá đơn"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edtSearchHoaDon"
+        android:layout_marginTop="24dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvHoaDon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddHoaDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/blue"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="@id/rcvHoaDon"
+            app:layout_constraintEnd_toEndOf="@id/rcvHoaDon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

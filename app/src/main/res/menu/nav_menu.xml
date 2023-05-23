@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_the_loai"
+            android:icon="@drawable/theloai"
+            android:title="Thể loại" />
+        <item
+            android:id="@+id/nav_sach"
+            android:icon="@drawable/sach"
+            android:title="Sách" />
+        <item
+            android:id="@+id/nav_hoa_don"
+            android:icon="@drawable/bill"
+            android:title="Hoá đơn" />
+    </group>
+
+    <item android:title="Thống kê">
+        <menu>
+            <item
+                android:id="@+id/nav_sach_ban_chay"
+                android:icon="@drawable/banchay"
+                android:title="Top 10 sách bán chạy" />
+            <item
+                android:id="@+id/nav_thong_ke"
+                android:icon="@drawable/thongke"
+                android:title="Thống kê" />
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_user"
+                android:icon="@drawable/user"
+                android:title="Người dùng" />
+            <item
+                android:id="@+id/nav_change_pass"
+                android:icon="@drawable/changepass"
+                android:title="Đổi mật khẩu" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
